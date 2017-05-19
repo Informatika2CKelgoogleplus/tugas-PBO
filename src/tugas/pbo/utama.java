@@ -5,15 +5,15 @@ import java.util.HashMap;
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 public class utama {
-        public int data;
-        public String kel;
-        public String orang;
-        public String nama;
-        public String email;
-        public String hp;
+    public int data;
+    public String kel;
+    public String orang;
+    public String nama;
+    public String email;
+    public String hp;
 
-        public utama(int data){
-                 this.data = data;
+    public utama(int data){
+        this.data = data;
         }
         public utama(String orang){
                 this.orang = orang;
@@ -84,6 +84,7 @@ public class utama {
 
             hshmp.forEach((k,v) -> 
                 System.out.println("User  : "+k+"\nData  :\n"+v.getOrang()));
+                        System.out.println("");
                         System.out.println("");
                         System.out.println("");
 
