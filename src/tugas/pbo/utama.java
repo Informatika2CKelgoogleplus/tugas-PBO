@@ -1,3 +1,5 @@
+package tugas.pbo;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
@@ -80,17 +82,17 @@ public class utama {
         fjr.setName("DWI NUR FAJAR");
         fjr.setEmail("dwinurfajar05@gmail.com");
         fjr.setGender("Male");
-        fjr.setCity("kalimantan");
+        fjr.setCity("Palangkaraya");
         fjr.setPhone("0857 5053 2336");
-        fjr.setHobby("sepakbola");
+        fjr.setHobby("Sepakbola");
         
         utama gt = new utama("dua");
         gt.setName("GITA ISMADIANTI");
         gt.setEmail("ismadiantigita@gmail.com");
         gt.setGender("Female");
-        gt.setCity("jombang");
+        gt.setCity("Jombang");
         gt.setPhone("0857 4843 9765");
-        gt.setHobby("makan");
+        gt.setHobby("Makan");
         
         utama rna = new utama("tiga");
         rna.setName("RIANA WIDYANTI");
@@ -98,7 +100,7 @@ public class utama {
         rna.setGender("Female");
         rna.setCity("Malang");
         rna.setPhone("0856 4999 6109");
-        rna.setHobby("dolen");
+        rna.setHobby("Dolen");
         
         utama ay = new utama("empat");
         ay.setName("AYU PURWANINGSIH");
@@ -106,45 +108,47 @@ public class utama {
         ay.setGender("Female");
         ay.setCity("Tulungagung");
         ay.setPhone("0857 8520 3133");
-        ay.setHobby("menulis");
+        ay.setHobby("Menulis");
         
         ArrayList<String> org = new ArrayList<String>();
-        org.add("Nama    : "+fjr.getName()+"\nE-mail  : "+fjr.getEmail()+"\nGender  : "+fjr.getGender()+"\nHP      : "+fjr.getPhone());
-        org.add("Nama    : "+gt.getName()+"\nE-mail  : "+gt.getEmail()+"\nGender  : "+gt.getGender()+"\nHP      : "+gt.getPhone());
+        org.add("Name    : "+fjr.getName()+"\nE-mail  : "+fjr.getEmail()+"\nGender  : "+fjr.getGender()+"\nCity    : "+fjr.getCity()+"\nPhone   : "+fjr.getPhone()+"\nHobby   : "+fjr.getHobby());
+        org.add("Name    : "+gt.getName()+"\nE-mail  : "+gt.getEmail()+"\nGender  : "+gt.getGender()+"\nCity    : "+gt.getCity()+"\nPhone   : "+gt.getPhone()+"\nHobby   : "+gt.getHobby());
         
         ArrayList<String> klg = new ArrayList<String>();
-        klg.add("Nama    : "+fjr.getName()+"\nE-mail  : "+fjr.getEmail()+"\nGender  : "+fjr.getGender()+"\nHP      : "+fjr.getPhone());
-        klg.add("Nama    : "+ay.getName()+"\nE-mail  : "+ay.getEmail()+"\nGender  : "+ay.getGender()+"\nHP      : "+ay.getPhone());
-        klg.add("Nama    : "+rna.getName()+"\nE-mail  : "+rna.getEmail()+"\nGender  : "+rna.getGender()+"\nHP      : "+rna.getPhone());
+        klg.add("Name    : "+fjr.getName()+"\nE-mail  : "+fjr.getEmail()+"\nGender  : "+fjr.getGender()+"\nCity    : "+fjr.getCity()+"\nPhone   : "+fjr.getPhone()+"\nHobby   : "+fjr.getHobby());
+        klg.add("Name    : "+ay.getName()+"\nE-mail  : "+ay.getEmail()+"\nGender  : "+ay.getGender()+"\nCity    : "+ay.getCity()+"\nPhone   : "+ay.getPhone()+"\nHobby   : "+ay.getHobby());
+        klg.add("Name    : "+rna.getName()+"\nE-mail  : "+rna.getEmail()+"\nGender  : "+rna.getGender()+"\nCity    : "+rna.getCity()+"\nPhone   : "+rna.getPhone()+"\nHobby   : "+rna.getHobby());
 
         ArrayList<String> tmn = new ArrayList<String>();
-        tmn.add("Nama    : "+ay.getName()+"\nE-mail  : "+ay.getEmail()+"\nGender  : "+ay.getGender()+"\nHP      : "+ay.getPhone());
-        tmn.add("Nama    : "+rna.getName()+"\nE-mail  : "+rna.getEmail()+"\nGender  : "+rna.getGender()+"\nHP      : "+rna.getPhone());
-        tmn.add("Nama    : "+gt.getName()+"\nE-mail  : "+gt.getEmail()+"\nGender  : "+gt.getGender()+"\nHP      : "+gt.getPhone());
+        tmn.add("Name    : "+ay.getName()+"\nE-mail  : "+ay.getEmail()+"\nGender  : "+ay.getGender()+"\nCity    : "+ay.getCity()+"\n\nPhone   : "+ay.getPhone()+"\nHobby   : "+ay.getHobby());
+        tmn.add("Name    : "+rna.getName()+"\nE-mail  : "+rna.getEmail()+"\nGender  : "+rna.getGender()+"\nCity    : "+rna.getCity()+"\nPhone   : "+rna.getPhone()+"\nHobby   : "+rna.getHobby());
+        tmn.add("Nama    : "+gt.getName()+"\nE-mail  : "+gt.getEmail()+"\nGender  : "+gt.getGender()+"\nCity    : "+gt.getCity()+"\nPhone   : "+gt.getPhone()+"\nHobby   : "+gt.getHobby());
         
         ArrayList<String> kmp = new ArrayList<String>();
-        kmp.add("Nama    : "+fjr.getName()+"\nE-mail  : "+fjr.getEmail()+"\nGender  : "+fjr.getGender()+"\nHP      : "+fjr.getPhone());
-        kmp.add("Nama    : "+ay.getName()+"\nE-mail  : "+ay.getEmail()+"\nGender  : "+ay.getGender()+"\nHP      : "+ay.getPhone());
-        kmp.add("Nama    : "+rna.getName()+"\nE-mail  : "+rna.getEmail()+"\nGender  : "+rna.getGender()+"\nHP      : "+rna.getPhone());
-        kmp.add("Nama    : "+gt.getName()+"\nE-mail  : "+gt.getEmail()+"\nGender  : "+gt.getGender()+"\nHP      : "+gt.getPhone());
+        kmp.add("Name    : "+fjr.getName()+"\nE-mail  : "+fjr.getEmail()+"\nGender  : "+fjr.getGender()+"\nCity    : "+fjr.getCity()+"\nPhone   : "+fjr.getPhone()+"\nHobby   : "+fjr.getHobby());
+        kmp.add("Name    : "+ay.getName()+"\nE-mail  : "+ay.getEmail()+"\nGender  : "+ay.getGender()+"\nCity    : "+ay.getCity()+"\nPhone   : "+ay.getPhone()+"\nHobby   : "+ay.getHobby());
+        kmp.add("Name    : "+rna.getName()+"\nE-mail  : "+rna.getEmail()+"\nGender  : "+rna.getGender()+"\nCity    : "+rna.getCity()+"\nPhone   : "+rna.getPhone()+"\nHobby   : "+rna.getHobby());
+        kmp.add("Name    : "+gt.getName()+"\nE-mail  : "+gt.getEmail()+"\nGender  : "+gt.getGender()+"\nCity    : "+gt.getCity()+"\nPhone   : "+gt.getPhone()+"\nHobby   : "+gt.getHobby());
         
         ArrayList<String> rbt = new ArrayList<String>();
-        rbt.add("Nama    : "+fjr.getName()+"\nE-mail  : "+fjr.getEmail()+"\nGender  : "+fjr.getGender()+"\nHP      : "+fjr.getPhone());
-        rbt.add("Nama    : "+ay.getName()+"\nE-mail  : "+ay.getEmail()+"\nGender  : "+ay.getGender()+"\nHP      : "+ay.getPhone());
+        rbt.add("Name    : "+fjr.getName()+"\nE-mail  : "+fjr.getEmail()+"\nGender  : "+fjr.getGender()+"\nCity    : "+fjr.getCity()+"\n\nPhone   : "+fjr.getPhone()+"\nHobby   : "+fjr.getHobby());
+        rbt.add("Name    : "+ay.getName()+"\nE-mail  : "+ay.getEmail()+"\nGender  : "+ay.getGender()+"\nCity    : "+ay.getCity()+"\nPhone   : "+ay.getPhone()+"\nHobby   : "+ay.getHobby());
         
-        System.out.println("Daftar Cyrcle/Kelompok :");
-        System.out.println("1. Musuh");
-        System.out.println("2. Keluarga");
-        System.out.println("3. Teman");
-        System.out.println("4. Kampus");
-        System.out.println("5. Robotika");
-        System.out.print("pilihan : ");
-        Scanner scan = new Scanner(System.in);
-        pil = scan.nextInt();
+        do{
+            System.out.println("Daftar Cyrcle/Kelompok :");
+            System.out.println("1. Kelas");
+            System.out.println("2. Keluarga");
+            System.out.println("3. Teman");
+            System.out.println("4. Kampus");
+            System.out.println("5. Robotika");
+            System.out.print("Masukkan pilihan (1-5): ");
+            Scanner scan = new Scanner(System.in);
+            pil = scan.nextInt();
+        }while(pil < 1 || pil > 5);
         
         if(pil==1){
             HashMap<String, utama> hshmp = new HashMap<>(1);
-            hshmp.put("Musuh", new utama(org.get(0)+"\n"+"\n"+org.get(1)));
+            hshmp.put("Kelas", new utama(org.get(0)+"\n"+"\n"+org.get(1)));
             
             hshmp.forEach((k,v) -> 
             System.out.println("Cyrcle   : "+k+"\nDaftar  :\n"+v.getOrang()+"\n"));
