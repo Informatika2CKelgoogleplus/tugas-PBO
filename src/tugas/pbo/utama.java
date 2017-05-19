@@ -85,7 +85,7 @@ public class utama {
         hshmp.forEach((k,v) -> 
             System.out.println("User  : "+k+"\nData  :\n"+v.getOrang()));
             System.out.println("");
-            System.out.println("");
+            System.out.println("bbb");
             System.out.println("aaa");
 
         HashMap<String, utama> hshmp2 = new HashMap<>();
