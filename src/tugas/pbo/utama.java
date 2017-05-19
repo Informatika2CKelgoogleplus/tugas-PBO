@@ -109,6 +109,7 @@ public class utama {
 
         System.out.println("Daftar Cyrcle/Kelompok :");
         System.out.println("1. Musuh");
+        System.out.println("2. Keluarga");
         System.out.print("pilihan : ");
         Scanner scan = new Scanner(System.in);
         pil = scan.nextInt();
@@ -119,7 +120,13 @@ public class utama {
             
             hshmp.forEach((k,v) -> 
             System.out.println("Cyrcle   : "+k+"\nDaftar  :\n"+v.getOrang()+"\n"));
-
+        }
+        else if(pil==2){
+            HashMap<String, utama> hshmp = new HashMap<>(1);
+            hshmp.put("Keluarga", new utama(klg.get(0)+"\n"+"\n"+klg.get(1)+"\n"+"\n"+klg.get(2)));
+            
+            hshmp.forEach((k,v) ->
+            System.out.println("Cyrcle   : "+k+"\nDaftar  :\n"+v.getOrang()+"\n"));        
         }
 //        HashMap<String, utama> hshmp = new HashMap<>(1);
 //            hshmp.put("Musuh", new utama(org.get(0)+"\n"+"\n"+org.get(1)));
