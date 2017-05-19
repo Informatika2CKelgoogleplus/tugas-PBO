@@ -122,6 +122,12 @@ public class utama {
         tmn.add("Nama    : "+rna.getName()+"\nE-mail  : "+rna.getEmail()+"\nGender  : "+rna.getGender()+"\nHP      : "+rna.getPhone());
         tmn.add("Nama    : "+gt.getName()+"\nE-mail  : "+gt.getEmail()+"\nGender  : "+gt.getGender()+"\nHP      : "+gt.getPhone());
         
+        ArrayList<String> kmp = new ArrayList<String>();
+        kmp.add("Nama    : "+fjr.getName()+"\nE-mail  : "+fjr.getEmail()+"\nGender  : "+fjr.getGender()+"\nHP      : "+fjr.getPhone());
+        kmp.add("Nama    : "+ay.getName()+"\nE-mail  : "+ay.getEmail()+"\nGender  : "+ay.getGender()+"\nHP      : "+ay.getPhone());
+        kmp.add("Nama    : "+rna.getName()+"\nE-mail  : "+rna.getEmail()+"\nGender  : "+rna.getGender()+"\nHP      : "+rna.getPhone());
+        kmp.add("Nama    : "+gt.getName()+"\nE-mail  : "+gt.getEmail()+"\nGender  : "+gt.getGender()+"\nHP      : "+gt.getPhone());
+        
         System.out.println("Daftar Cyrcle/Kelompok :");
         System.out.println("1. Musuh");
         System.out.println("2. Keluarga");
@@ -150,6 +156,13 @@ public class utama {
             
             hshmp.forEach((k,v) ->
             System.out.println("Cyrcle   : "+k+"\nDaftar  :\n"+v.getOrang()+"\n"));        
+        }
+        else if(pil==4){
+            HashMap<String, utama> hshmp = new HashMap<>(1);
+            hshmp.put("Musuh", new utama(kmp.get(0)+"\n"+"\n"+kmp.get(1)+"\n"+"\n"+kmp.get(2)+"\n"+"\n"+kmp.get(3)));
+            
+            hshmp.forEach((k,v) -> 
+            System.out.println("Cyrcle   : "+k+"\nDaftar  :\n"+v.getOrang()+"\n"));
         }
 //        HashMap<String, utama> hshmp = new HashMap<>(1);
 //            hshmp.put("Musuh", new utama(org.get(0)+"\n"+"\n"+org.get(1)));
