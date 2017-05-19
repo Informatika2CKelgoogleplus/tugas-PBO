@@ -1,28 +1,28 @@
-package tugas.pbo;
 import java.util.ArrayList;
 import java.util.HashMap;
-
-import javax.swing.plaf.synth.SynthOptionPaneUI;
+import java.util.Scanner;
 
 public class utama {
-    public int data;
-    public String kel;
-    public String orang;
-    public String nama;
-    public String email;
-    public String hp;
+    protected int pil;
+    protected String kel;
+    protected String orang;
+    protected String name;
+    protected String email;
+    protected String gender;
+    protected String city;
+    protected String phone;
 
-    public utama(int data){
-        this.data = data;
+    public utama(int pil){
+        this.pil = pil;
     }
     public utama(String orang){
         this.orang = orang;
     }
-    public void setData(int data){
-        this.data = data;
+    public void setPil(int pil){
+        this.pil = pil;
     }
-    public int getData(){
-        return data;
+    public int getPil(){
+        return pil;
     }
     public void setKel(String kel){
         this.kel = kel;
@@ -36,11 +36,11 @@ public class utama {
     public String getOrang(){
         return orang;
     }
-    public void setNama(String nama){
-        this.nama = nama;
+    public void setName(String name){
+        this.name = name;
     }
-    public String getNama(){
-        return nama;
+    public String getName(){
+        return name;
     }
     public void setEmail(String email){
         this.email = email;
@@ -48,49 +48,84 @@ public class utama {
     public String getEmail(){
         return email;
     }
-    public void setHp(String hp){
-        this.hp = hp;
+    public void setGender(String gender){
+        this.gender = gender;
     }
-    public String getHp(String hp){
-        return hp;
+    public String getGender(){
+        return gender;
+    }
+    public void setCity(String city){
+        this.city = city;
+    }
+    public String getCity(){
+        return city;
+    }
+    public void setPhone(String phone){
+        this.phone = phone;
+    }
+    public String getPhone(){
+        return phone;
     }
 
-    public static void main(String[]args){		
-        utama qw = new utama("qw");
-        qw.setNama("saya\n");
-        qw.setEmail("qw@gmail.com");
+    public static void main(String[]args){	
+        //Scanner scan = new Scanner(System.in);
+        int pil;
+        utama fjr = new utama("satu");
+        fjr.setName("DWI NUR FAJAR");
+        fjr.setEmail("dwinurfajar05@gmail.com");
+        fjr.setGender("Male");
+        fjr.setCity("");
+        fjr.setPhone("0857 5053 2336");
+        
+        utama gt = new utama("dua");
+        gt.setName("GITA ISMADIANTI");
+        gt.setEmail("ismadiantigita@gmail.com");
+        gt.setGender("Female");
+        gt.setCity("");
+        gt.setPhone("0857 4843 9765");
+        
+        utama rna = new utama("tiga");
+        rna.setName("RIANA WIDYANTI");
+        rna.setEmail("riana.widianty@gmail.com");
+        rna.setGender("Female");
+        rna.setCity("");
+        rna.setPhone("0856 4999 6109");
+        
+        utama ay = new utama("empat");
+        ay.setName("AYU PURWANINGSIH");
+        ay.setEmail("lunaayu5@gmail.com");
+        ay.setGender("Female");
+        ay.setCity("");
+        ay.setPhone("0857 8520 3133");
 
-        ArrayList<utama> obj = new ArrayList<>(1);		
-        obj.add(new utama (1));
+        ArrayList<String> org = new ArrayList<String>();
+        org.add("Nama    : "+fjr.getName()+"\nE-mail  : "+fjr.getEmail()+"\nGender  : "+fjr.getGender()+"\nHP      : "+fjr.getPhone());
+        org.add("Nama    : "+gt.getName()+"\nE-mail  : "+gt.getEmail()+"\nGender  : "+gt.getGender()+"\nHP      : "+gt.getPhone());
+        
+        ArrayList<String> klg = new ArrayList<String>();
+        klg.add("Nama    : "+fjr.getName()+"\nE-mail  : "+fjr.getEmail()+"\nGender  : "+fjr.getGender()+"\nHP      : "+fjr.getPhone());
+        klg.add("Nama    : "+ay.getName()+"\nE-mail  : "+ay.getEmail()+"\nGender  : "+ay.getGender()+"\nHP      : "+ay.getPhone());
+        klg.add("Nama    : "+rna.getName()+"\nE-mail  : "+rna.getEmail()+"\nGender  : "+rna.getGender()+"\nHP      : "+rna.getPhone());
 
-        ArrayList<utama> fajar = new ArrayList<>();
-        fajar.add(new utama (qw.getNama()+qw.getEmail()));
-        fajar.add(new utama ("dwinurfajar05@gmail.com"));
+        System.out.println("Daftar Cyrcle/Kelompok :");
+        System.out.println("1. Musuh");
+        System.out.print("pilihan : ");
+        Scanner scan = new Scanner(System.in);
+        pil = scan.nextInt();
+        
+        if(pil==1){
+            HashMap<String, utama> hshmp = new HashMap<>(1);
+            hshmp.put("Musuh", new utama(org.get(0)+"\n"+"\n"+org.get(1)));
+            
+            hshmp.forEach((k,v) -> 
+            System.out.println("Cyrcle   : "+k+"\nDaftar  :\n"+v.getOrang()+"\n"));
 
-        ArrayList<utama> palui = new ArrayList<>();
-        palui.add(new utama("Palui"));
-        palui.add(new utama("palui@gmai.com"));
-
-        HashMap<String, utama> hshmp = new HashMap<>(1);
-            hshmp.put("fajar", new utama("Nama  : DWI NUR FAJAR"+"\nEmail : dwinurfajar05@gmail.com"));
-            hshmp.put("palui", new utama("Nama  : PALUI"+"\nEmail  : palui@gmail.com"));
-
-            for(utama a:obj){
-                System.out.println(a.getData());//angka
-            }
-            for(utama b:fajar){
-                System.out.println(b.getOrang()+"\n");//arraylist fjr
-            }
-
-        hshmp.forEach((k,v) -> 
-            System.out.println("User  : "+k+"\nData  :\n"+v.getOrang()));
-            System.out.println("");
-            System.out.println("bbba");
-            System.out.println("aaa");
-
-        HashMap<String, utama> hshmp2 = new HashMap<>();
-            hshmp2.put("palui2", new utama("Nama  : PALUI2"+"\nEmail  : palui2@gmail.com"));
-        System.out.println("tes");
+        }
+//        HashMap<String, utama> hshmp = new HashMap<>(1);
+//            hshmp.put("Musuh", new utama(org.get(0)+"\n"+"\n"+org.get(1)));
+//            hshmp.put("Keluarga", new utama(klg.get(0)+"\n"+"\n"+klg.get(1)+"\n"+"\n"+klg.get(2)));
+//
+//        hshmp.forEach((k,v) -> 
+//            System.out.println("Cyrcle   : "+k+"\nDaftar  :\n"+v.getOrang()+"\n"));
     }
-    
 }
