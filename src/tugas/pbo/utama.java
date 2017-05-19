@@ -128,10 +128,16 @@ public class utama {
         kmp.add("Nama    : "+rna.getName()+"\nE-mail  : "+rna.getEmail()+"\nGender  : "+rna.getGender()+"\nHP      : "+rna.getPhone());
         kmp.add("Nama    : "+gt.getName()+"\nE-mail  : "+gt.getEmail()+"\nGender  : "+gt.getGender()+"\nHP      : "+gt.getPhone());
         
+        ArrayList<String> rbt = new ArrayList<String>();
+        rbt.add("Nama    : "+fjr.getName()+"\nE-mail  : "+fjr.getEmail()+"\nGender  : "+fjr.getGender()+"\nHP      : "+fjr.getPhone());
+        rbt.add("Nama    : "+ay.getName()+"\nE-mail  : "+ay.getEmail()+"\nGender  : "+ay.getGender()+"\nHP      : "+ay.getPhone());
+        
         System.out.println("Daftar Cyrcle/Kelompok :");
         System.out.println("1. Musuh");
         System.out.println("2. Keluarga");
         System.out.println("3. Teman");
+        System.out.println("4. Kampus");
+        System.out.println("5. Robotika");
         System.out.print("pilihan : ");
         Scanner scan = new Scanner(System.in);
         pil = scan.nextInt();
@@ -159,16 +165,17 @@ public class utama {
         }
         else if(pil==4){
             HashMap<String, utama> hshmp = new HashMap<>(1);
-            hshmp.put("Musuh", new utama(kmp.get(0)+"\n"+"\n"+kmp.get(1)+"\n"+"\n"+kmp.get(2)+"\n"+"\n"+kmp.get(3)));
+            hshmp.put("Kampus", new utama(kmp.get(0)+"\n"+"\n"+kmp.get(1)+"\n"+"\n"+kmp.get(2)+"\n"+"\n"+kmp.get(3)));
             
             hshmp.forEach((k,v) -> 
             System.out.println("Cyrcle   : "+k+"\nDaftar  :\n"+v.getOrang()+"\n"));
         }
-//        HashMap<String, utama> hshmp = new HashMap<>(1);
-//            hshmp.put("Musuh", new utama(org.get(0)+"\n"+"\n"+org.get(1)));
-//            hshmp.put("Keluarga", new utama(klg.get(0)+"\n"+"\n"+klg.get(1)+"\n"+"\n"+klg.get(2)));
-//
-//        hshmp.forEach((k,v) -> 
-//            System.out.println("Cyrcle   : "+k+"\nDaftar  :\n"+v.getOrang()+"\n"));
+        if(pil==5){
+            HashMap<String, utama> hshmp = new HashMap<>(1);
+            hshmp.put("Robotika", new utama(rbt.get(0)+"\n"+"\n"+rbt.get(1)));
+            
+            hshmp.forEach((k,v) -> 
+            System.out.println("Cyrcle   : "+k+"\nDaftar  :\n"+v.getOrang()+"\n"));
+        }
     }
 }
