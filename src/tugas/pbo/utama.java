@@ -14,31 +14,31 @@ public class utama {
 
     public utama(int data){
         this.data = data;
-        }
-        public utama(String orang){
-                this.orang = orang;
-        }
-        public void setData(int data){
-                this.data = data;
-        }
-        public int getData(){
-                return data;
-        }
-        public void setKel(String kel){
-                this.kel = kel;
-        }
-        public String getKel(){
-                return kel;
-        }
-        public void setOrang(String orang){
-                this.orang = orang;
-        }
-        public String getOrang(){
-                return orang;
-        }
-        public void setNama(String nama){
-                this.nama = nama;
-        }
+    }
+    public utama(String orang){
+        this.orang = orang;
+    }
+    public void setData(int data){
+        this.data = data;
+    }
+    public int getData(){
+        return data;
+    }
+    public void setKel(String kel){
+        this.kel = kel;
+    }
+    public String getKel(){
+        return kel;
+    }
+    public void setOrang(String orang){
+        this.orang = orang;
+    }
+    public String getOrang(){
+        return orang;
+    }
+    public void setNama(String nama){
+        this.nama = nama;
+    }
         public String getNama(){
                 return nama;
         }
