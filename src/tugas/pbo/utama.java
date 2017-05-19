@@ -39,57 +39,57 @@ public class utama {
     public void setNama(String nama){
         this.nama = nama;
     }
-        public String getNama(){
-                return nama;
-        }
-        public void setEmail(String email){
-                this.email = email;
-        }
-        public String getEmail(){
-                return email;
-        }
-        public void setHp(String hp){
-                this.hp = hp;
-        }
-        public String getHp(String hp){
-                return hp;
-        }
+    public String getNama(){
+        return nama;
+    }
+    public void setEmail(String email){
+        this.email = email;
+    }
+    public String getEmail(){
+        return email;
+    }
+    public void setHp(String hp){
+        this.hp = hp;
+    }
+    public String getHp(String hp){
+        return hp;
+    }
 
-        public static void main(String[]args){		
-                utama qw = new utama("qw");
-                qw.setNama("saya\n");
-                qw.setEmail("qw@gmail.com");
+    public static void main(String[]args){		
+        utama qw = new utama("qw");
+        qw.setNama("saya\n");
+        qw.setEmail("qw@gmail.com");
 
-                ArrayList<utama> obj = new ArrayList<>(1);		
-                obj.add(new utama (1));
+        ArrayList<utama> obj = new ArrayList<>(1);		
+        obj.add(new utama (1));
 
-                ArrayList<utama> fajar = new ArrayList<>();
-                fajar.add(new utama (qw.getNama()+qw.getEmail()));
-                fajar.add(new utama ("dwinurfajar05@gmail.com"));
+        ArrayList<utama> fajar = new ArrayList<>();
+        fajar.add(new utama (qw.getNama()+qw.getEmail()));
+        fajar.add(new utama ("dwinurfajar05@gmail.com"));
 
-                ArrayList<utama> palui = new ArrayList<>();
-                palui.add(new utama("Palui"));
-                palui.add(new utama("palui@gmai.com"));
+        ArrayList<utama> palui = new ArrayList<>();
+        palui.add(new utama("Palui"));
+        palui.add(new utama("palui@gmai.com"));
 
-                HashMap<String, utama> hshmp = new HashMap<>(1);
-                        hshmp.put("fajar", new utama("Nama  : DWI NUR FAJAR"+"\nEmail : dwinurfajar05@gmail.com"));
-                        hshmp.put("palui", new utama("Nama  : PALUI"+"\nEmail  : palui@gmail.com"));
+        HashMap<String, utama> hshmp = new HashMap<>(1);
+            hshmp.put("fajar", new utama("Nama  : DWI NUR FAJAR"+"\nEmail : dwinurfajar05@gmail.com"));
+            hshmp.put("palui", new utama("Nama  : PALUI"+"\nEmail  : palui@gmail.com"));
 
-                for(utama a:obj){
-                        System.out.println(a.getData());//angka
-                }
-                for(utama b:fajar){
-                        System.out.println(b.getOrang()+"\n");//arraylist fjr
-                }
+            for(utama a:obj){
+                System.out.println(a.getData());//angka
+            }
+            for(utama b:fajar){
+                System.out.println(b.getOrang()+"\n");//arraylist fjr
+            }
 
-            hshmp.forEach((k,v) -> 
-                System.out.println("User  : "+k+"\nData  :\n"+v.getOrang()));
-                        System.out.println("");
-                        System.out.println("");
-                        System.out.println("");
+        hshmp.forEach((k,v) -> 
+            System.out.println("User  : "+k+"\nData  :\n"+v.getOrang()));
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
 
-            HashMap<String, utama> hshmp2 = new HashMap<>();
-                hshmp2.put("palui2", new utama("Nama  : PALUI2"+"\nEmail  : palui2@gmail.com"));
+        HashMap<String, utama> hshmp2 = new HashMap<>();
+            hshmp2.put("palui2", new utama("Nama  : PALUI2"+"\nEmail  : palui2@gmail.com"));
         }
 
 }
