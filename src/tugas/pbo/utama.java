@@ -90,6 +90,7 @@ public class utama {
 
         HashMap<String, utama> hshmp2 = new HashMap<>();
             hshmp2.put("palui2", new utama("Nama  : PALUI2"+"\nEmail  : palui2@gmail.com"));
-        }
-
+        System.out.println("tes");
+    }
+    
 }
